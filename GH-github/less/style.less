@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&display=swap');
+
+body {
+	font-family: 'Fira Sans', sans-serif;
+}
+
+@btn: #612F7D;
+@light: #ffffff;
+@lavand: #815799;
+@black-text: #434343;
+
+html {
+ font-size: 10px;
+
+}
+
+button, input, a, textarea{
+	&:focus {
+		outline: none;
+	}
+}
+
+.bold() {
+	font-family: 'Fira Sans bold', sans-serif;
+	font-weight: 700;
+}
+.sld-template{
+		background: @lavand url('../img/bg_slider.jpg') left top repeat;
+	.container{
+		padding: 0rem;
+	}
+	&-slider{
+	}
+	a{
+			text-decoration:none;
+			color: @black-text;
+	}
+	&-block{
+		margin: 2.5rem;
+		max-width: 25rem;
+	 word-wrap: break-word;
+	 background-color: @light;
+	 box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.25);
+		display:inline-block;
+		text-align: center;
+		font-size: 1.8rem;	
+		&:hover{
+		background-color: darken(@light, 25%);
+	 box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);	
+		}	
+		h3{
+			font-size: 2.5rem;
+		}
+		p{
+			font-size: 1.6rem;
+		}
+	}
+	&-img{
+	display:block;
+	}
+}
+
+.rose{
+	background: @lavand url('../img/bg_slider.jpg') left top repeat;
+	.container{
+		padding: 0rem;
+	}
+	&-slider{
+	}
+	a{
+			text-decoration:none;
+			color: @black-text;
+	}
+	&-block{
+		margin: 2.5rem;
+		max-width: 25rem;
+	 word-wrap: break-word;
+	 background-color: @light;
+	 box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.25);
+		display:inline-block;
+		text-align: center;
+		font-size: 1.8rem;	
+		&:hover{
+		background-color: darken(@light, 25%);
+	 box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);	
+		}	
+		h3{
+			font-size: 2.5rem;
+		}
+		p{
+			font-size: 1.6rem;
+		}
+	}
+	&-img{
+	display:block;
+	}
+}
+
+/* Шаблон кнопки */
+.btn_template{
+	  border:0;
+			border-radius: 15px;
+			width: 22rem;
+			height: 7rem;
+			font-size: 2.5rem;
+			text-transform: uppercase;
+			text-align: center;
+			color: @light;
+			background-color: @btn;
+			box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.25);
+}
+/* Шаблон кнопки */
+
+/* шапка */
+.menu{
+	&-name-market{
+		h2{
+		text-align: left;
+		margin: 0rem;
+		padding: 1rem 1rem;
+		.bold();
+		font-size: 3rem;
+		line-height: 1;
+		text-transform: uppercase;
+		color:@black-text;
+	} 
+	}/* name-market */
+	&-btn-order {
+		button {
+			margin-top: 0.8rem;
+		.btn_template();
+		line-height: 1.1;
+		}
+	}/* Button */
+	&-contact{
+		p{
+			font-size: 2rem;
+			.bold();
+		 line-height: 1.2;
+		 margin-top: 0.8rem;
+		 color:@black-text;
+		}
+	}
+	/* contact */
+	&-phone{		
+		 img{
+		 position: relative;	
+	 	display: inline-block;
+	 	width: 3.6rem;
+	 	height: 3.6rem;
+			margin-top: 1rem;
+		 }
+		 p {
+		 	position:absolute;
+				display: inline-block;
+				padding: 0.7rem;
+				font-size: 3rem;
+			.bold();
+			background-size: cover;
+			color:@black-text;
+		}
+	}		
+}
+/* шапка */
+
+/* Меню навигации */
+.navbar{
+	margin-top: 1rem;
+	background-color: @lavand;
+	font-size: 2rem;
+	text-transform: uppercase;
+.dropdown-menu{
+ background-color: @lavand;
+ font-size: 1.5rem;
+}
+	ul{
+		list-style: none;
+	}
+	li{
+		margin-right: 9rem;
+	}
+a{
+	color: @light;
+		&:hover {
+		color: darken(@light, 30%);
+	}
+}
+}
+/* Меню навигации */
+
+/* Главный заголовок */
+	h1{
+		font-size: 3.9rem;
+		.bold();
+		text-align: center;
+		margin: 3rem;
+		text-transform: uppercase;
+		color:@black-text;
+}
+
+	h2{
+		text-align: center;
+	 text-transform: uppercase;
+		font-size: 2.5rem;
+		.bold();
+  	margin: 3rem;
+	}
+
+.arrow {
+	top:50%;
+	transform: translateY(50%);
+	position: absolute;
+	z-index: 99;
+	width: 2rem;
+	height: 2rem;
+	border:none;
+}
+
+.prev {
+	left: 0;
+	background: url(../img/arrow.png) center no-repeat;
+	background-size: 70%;	
+}
+.next {
+	right: 0;
+	background: url(../img/arrow_r.png) center no-repeat;
+	background-size: 70%;
+}
+
+.market{
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.buket{
+.sld-template();
+}
+
+.rose{
+	.sld-template();
+}
+
+.flowers{
+	.sld-template();
+}
+
+
+
